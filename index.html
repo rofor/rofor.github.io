@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>EtherLive_Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta charset="utf-8">
+    <link rel="stylesheet" href="css/carto-style.css" />
+    <link rel="stylesheet" href="css/locate.css" />
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/leaflet.js" charset="utf-8"></script>
+    <script src="js/carto.min.js" charset="utf-8"></script>
+    <script src="js/locate.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <div id="map"></div>
+  <div id='map-wrapper'>
+    <select id="selectDropLocation" class='dropdown'>
+      <div>
+        <option id="drops" selected value="">L</option>
+      </div>
+    </select>
+    <select id="selectDropMac" class='dropdown'>
+      <div>
+        <option id="drops" selected value="">M</option>
+      </div>
+    </select>
+    <select id="selectDropTag" class='dropdown'>
+      <div>
+        <option id="drops" selected value="">T</option>
+      </div>
+    </select>
+  </div>
+  <input type="text" id="geomy" style="opacity:0" />
+  <script src="core.js" charset="utf-8"></script>
+  <script src="find.js" charset="utf-8"></script>
+  <script src="edit.js" charset="utf-8"></script>
+</body>
+
+</html>
